@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
+    "concurrently": "^5.3.0",
     "json-server": "^0.16.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -17,6 +18,8 @@
   },
   "scripts": {
     "start": "PORT=4000 react-scripts start",
+    "json-server": "json-server --watch backend_json_server/db.json",
+    "dev" : "concurrently \"npm start\" \"npm run json-server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -10,6 +10,10 @@ export default class Quiz extends Component {
     render() {
         return (
             <div className="container" style = {{marginTop:50}}>
+              <h1 className="display-3">List of quizzes available</h1>
+        <p style={{ fontSize: 20 }}>
+          Click on any of the Start Quiz buttons for a particular domain to test your knowledge in that field..
+        </p>
 
 <div class="row">
   <div class="col-sm-4">
@@ -17,7 +21,7 @@ export default class Quiz extends Component {
   <img class="card-img-top" src={img1} alt="Card image cap" />
   <div class="card-body">
     <h5 class="card-title">Sports</h5>
-    <p class="card-text">Test you knowledge in the world of sports. With questions ranging From cricket to tennis to sumo wrestling, this is the ultimate test of your knowledge</p>
+    <p class="card-text">With questions ranging From cricket to tennis, this is the ultimate test of your knowledge about the world of sports</p>
     <a href="quiz/sports" class="btn btn-primary">Take the sports quiz</a>
   </div>
 </div>
@@ -37,7 +41,7 @@ export default class Quiz extends Component {
   <img class="card-img-top" src={img3} alt="Card image cap" />
   <div class="card-body">
     <h5 class="card-title">Programming</h5>
-    <p class="card-text">Surely the knowledge of the future. With AI and ML around the corner of a major shift in the way the world works, dont lag behind and test your Programming knowledge now!</p>
+    <p class="card-text">With AI and ML around the corner of a major shift in the way the world works,test your Programming knowledge now!</p>
     <a href="/quiz/programming" class="btn btn-primary">Take the Programming quiz</a>
   </div>
 </div>

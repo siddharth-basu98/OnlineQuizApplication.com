@@ -30,7 +30,7 @@ export default class ShowTest extends Component {
 
     handleChange = (i, option) => {
         let temp_ques = this.state.questions ;
-        if(temp_ques.length==0){
+        if(temp_ques.length===0){
             return
         } 
         temp_ques[i].your_answer = option
@@ -53,8 +53,12 @@ export default class ShowTest extends Component {
         else{
         console.log(this.state.questions) ;
         return (
-            <div>
-                <p>Here is the list of ques</p>
+            <div style={{marginBottom:60}}>
+                <h1 className="display-3">Questions</h1>
+        <p style={{ fontSize: 20 }}>
+          Click on the option you think is correct. Once you do the selected option is shown in blue color. <br/>Finally after attending all the questions click the submit button to get <b>your score.</b> 
+        </p>
+        <br />
                 {
                     this.state.questions.map((listValue, index) => {
                         return(
@@ -65,12 +69,12 @@ export default class ShowTest extends Component {
                             <div class="card-body">
                             <h5 class="card-title">{listValue.question}</h5>
 
-                            <button style={{marginRight:"5%", width:"40%"}} class={this.state.questions[index].your_answer=="1" ? ("btn btn-primary btn-lg") : ("btn btn-dark btn-lg")} onClick={() => {this.handleChange(index, "1")}}>{listValue.option1}</button>
-                            <button style={{marginLeft:"5%", width:"40%"}} class={this.state.questions[index].your_answer=="2" ? ("btn btn-primary btn-lg") : ("btn btn-dark btn-lg")} onClick={() => {this.handleChange(index, "2")}}>{listValue.option2}</button>
+                            <button style={{marginRight:"5%", width:"40%"}} class={this.state.questions[index].your_answer==="1" ? ("btn btn-primary btn-lg") : ("btn btn-dark btn-lg")} onClick={() => {this.handleChange(index, "1")}}>{listValue.option1}</button>
+                            <button style={{marginLeft:"5%", width:"40%"}} class={this.state.questions[index].your_answer==="2" ? ("btn btn-primary btn-lg") : ("btn btn-dark btn-lg")} onClick={() => {this.handleChange(index, "2")}}>{listValue.option2}</button>
                             <br />
                             <br />
-                            <button style={{marginRight:"5%", width:"40%"}} class={this.state.questions[index].your_answer=="3" ? ("btn btn-primary btn-lg") : ("btn btn-dark btn-lg")} onClick={() => {this.handleChange(index, "3")}}>{listValue.option3}</button>
-                            <button style={{marginLeft:"5%", width:"40%"}} class={this.state.questions[index].your_answer=="4" ? ("btn btn-primary btn-lg") : ("btn btn-dark btn-lg")} onClick={() => {this.handleChange(index, "4")}}>{listValue.option4}</button>
+                            <button style={{marginRight:"5%", width:"40%"}} class={this.state.questions[index].your_answer==="3" ? ("btn btn-primary btn-lg") : ("btn btn-dark btn-lg")} onClick={() => {this.handleChange(index, "3")}}>{listValue.option3}</button>
+                            <button style={{marginLeft:"5%", width:"40%"}} class={this.state.questions[index].your_answer==="4" ? ("btn btn-primary btn-lg") : ("btn btn-dark btn-lg")} onClick={() => {this.handleChange(index, "4")}}>{listValue.option4}</button>
 
                             </div>
                             </div>
@@ -82,7 +86,7 @@ export default class ShowTest extends Component {
                     })
                 }
                 
-                <button onClick={() => {this.setState({done:true})}}>Click Me!</button>
+                <button onClick={() => {this.setState({done:true})}} className="btn btn-lg btn-success">Submit answers</button>
 
             </div>
         )

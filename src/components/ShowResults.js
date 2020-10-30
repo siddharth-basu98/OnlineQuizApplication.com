@@ -1,5 +1,7 @@
 import Axios from 'axios';
 import React, { Component } from 'react'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
 import axios from 'axios'
 
 export default class ShowResults extends Component {
@@ -22,7 +24,7 @@ export default class ShowResults extends Component {
 
         for(data of ans){
 
-            if(data.answer==data.your_answer){
+            if(data.answer===data.your_answer){
                 count++ ; 
             }
         }
@@ -51,9 +53,12 @@ export default class ShowResults extends Component {
         console.log(this.state.score) ; 
 
         return (
-            <div>
-        <h1>You scored {this.state.score}/{this.state.quiz_data.length}</h1>
-        <p>Here is the review of your answers. The answers you got wrong have the option you chose marked in red and the correct option in green.</p>
+            <div style={{marginBottom:40}}>
+            <h1 className="display-3">Review and Assessment</h1>
+            <br />
+
+        <h1 className="display-4">You scored {this.state.score}/{this.state.quiz_data.length}</h1>
+        <p>Here is the review of your answers. <b>The answers you attempted and got wrong are marked in red</b> and the <b>correct option in green.</b></p>
         <br />
 
 
@@ -63,16 +68,16 @@ export default class ShowResults extends Component {
 
                             <div className="container">
                             <div class="card">
-                        <h5 class="card-header">Question {index+1} {(listValue.your_answer != listValue.answer) ? (" - (Wrong)") : (" - (Correct)")}</h5>
+                        <h5 class="card-header">Question {index+1} {(listValue.your_answer !== listValue.answer) ? (" - (Wrong)") : (" - (Correct)")}</h5>
                             <div class="card-body">
                             <h5 class="card-title">{listValue.question}</h5>
 
-                            <button style={{marginRight:"5%", width:"40%"}} className={(listValue.your_answer === "1" &&  listValue.your_answer != listValue.answer) ? "btn btn-danger" : (listValue.answer === "1" ? "btn btn-success": "")} onClick={() => {this.handleChange(index, "1")}}>{listValue.option1}</button>
-                            <button style={{marginLeft:"5%", width:"40%"}}  className={(listValue.your_answer === "2" &&  listValue.your_answer != listValue.answer) ? "btn btn-danger" : (listValue.answer === "2" ? "btn btn-success": "") } onClick={() => {this.handleChange(index, "2")}}>{listValue.option2}</button>
+                            <button style={{marginRight:"5%", width:"40%"}} className={(listValue.your_answer === "1" &&  listValue.your_answer !== listValue.answer) ? "btn btn-danger" : (listValue.answer === "1" ? "btn btn-success": "")} onClick={() => {this.handleChange(index, "1")}}>{listValue.option1}</button>
+                            <button style={{marginLeft:"5%", width:"40%"}}  className={(listValue.your_answer === "2" &&  listValue.your_answer !== listValue.answer) ? "btn btn-danger" : (listValue.answer === "2" ? "btn btn-success": "") } onClick={() => {this.handleChange(index, "2")}}>{listValue.option2}</button>
                             <br />
                             <br />
-                            <button style={{marginRight:"5%", width:"40%"}} className={(listValue.your_answer === "3" &&  listValue.your_answer != listValue.answer) ? "btn btn-danger" : (listValue.answer === "3" ? "btn btn-success": "") }>{listValue.option3}</button>
-                            <button style={{marginLeft:"5%", width:"40%"}} className={(listValue.your_answer === "4" &&  listValue.your_answer != listValue.answer) ? "btn btn-danger" : (listValue.answer === "4" ? "btn btn-success": "") }>{listValue.option4}</button>
+                            <button style={{marginRight:"5%", width:"40%"}} className={(listValue.your_answer === "3" &&  listValue.your_answer !== listValue.answer) ? "btn btn-danger" : (listValue.answer === "3" ? "btn btn-success": "") }>{listValue.option3}</button>
+                            <button style={{marginLeft:"5%", width:"40%"}} className={(listValue.your_answer === "4" &&  listValue.your_answer !== listValue.answer) ? "btn btn-danger" : (listValue.answer === "4" ? "btn btn-success": "") }>{listValue.option4}</button>
 
                             </div>
                             </div>
@@ -83,6 +88,14 @@ export default class ShowResults extends Component {
                         )
                     })
                 }
+
+            <Link
+              to="/quiz"
+              className="btn btn-dark btn-lg"
+              style={{ padding: 8 }}
+            >
+              <h4>Take some other quiz now!</h4>
+            </Link>
 
             </div>
         )
