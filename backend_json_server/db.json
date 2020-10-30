@@ -1,0 +1,118 @@
+{
+    "question": [
+      {
+        "id": 1,
+        "domain":"sports",
+        "question": "In Football, which team has won the UEFA Champions League the most number of times?",
+        "option1":"Real Madrid",
+        "option2":"FC Barcelona",
+        "option3":"Manchester United",
+        "option4":"Bayern Munich",
+        "answer" : "1",
+        "your_answer": ""
+      },
+      {
+        "id": 2,
+        "domain":"sports",
+        "question": "Which F1 driver has the record for winning the most number of races in F1 history?",
+        "option1":"Michael Schumacher",
+        "option2":"Ayrton Senna",
+        "option3":"Lewis Hamilton",
+        "option4":"David Coulthard",
+        "answer" : "3",
+        "your_answer": ""
+      },
+      {
+        "id": 3,
+        "domain":"sports",
+        "question": "In tennis, what piece of fruit is found at the top of the men's Wimbledon trophy?",
+        "option1":"Strawberry",
+        "option2":"Pineapple",
+        "option3":"Apple",
+        "option4":"Custard Apple",
+        "answer" : "2",
+        "your_answer": ""
+      },
+      {
+        "id": 4,
+        "domain":"sports",
+        "question": "What does the Olympic Flame symbolize?",
+        "option1":"zeal to play sports",
+        "option2":"Challenge",
+        "option3":"Continuity",
+        "option4":"Integrity",
+        "answer" : "3",
+        "your_answer": ""
+      },
+      {
+        "id": 5,
+        "domain":"sports",
+        "question": "For which of the following games / sports the term Ring is not used for ground/space?",
+        "option1":"Boxing",
+        "option2":"Ice Hockey",
+        "option3":"Gymnastics",
+        "option4":"Baseball",
+        "answer" : "4",
+        "your_answer": ""
+      },
+      {
+        "id": 6,
+        "domain":"programming",
+        "question": "What word is missing from the SQL line? -> SELECT * _______ CUSTOMER;?",
+        "option1":"FROM",
+        "option2":"SELECT",
+        "option3":"WHERE",
+        "option4":"ORDER BY",
+        "answer" : "1",
+        "your_answer": ""
+      },
+      {
+        "id": 7,
+        "domain":"programming",
+        "question": "Let's say you're storing an object in a variable named 'pumpkin'. Which line of code would add a new property 'eyes' to the object?",
+        "option1":"pumpkin.push({eyes: 'green'});",
+        "option2":"pumpkin[eyes] = 'green';",
+        "option3":"pumpkin.eyes = 'green';",
+        "option4":"var pumpkin.eyes = 'green'",
+        "answer" : "3",
+        "your_answer": ""
+      },
+      {
+        "id": 8,
+        "domain":"programming",
+        "question": "CPU stand for ________ processing unit",
+        "option1":"command",
+        "option2":"control",
+        "option3":"hogwartz",
+        "option4":"central",
+        "answer" : "4",
+        "your_answer": ""
+      },
+      {
+        "id": 9,
+        "domain":"programming",
+        "question": "Katherine is creating a computer program that will allow the cursor to jump to a different location when the mouse is clicked on a certain image. Which programming component should Katherine use to tell the program what to do when the mouse is clicked on the image?",
+        "option1":"Parameter",
+        "option2":"Event Handler",
+        "option3":"Class",
+        "option4":"CSS style",
+        "answer" : "2",
+        "your_answer": ""
+      },
+      {
+        "id": 10,
+        "domain":"programming",
+        "question": "CSS is widely used for styling web pages. What does CSS stand for?",
+        "option1":"Cascading Style Sheets",
+        "option2":"Central Space Storage",
+        "option3":"Central Storage System",
+        "option4":"Control Systems Society",
+        "answer" : "1",
+        "your_answer": ""
+      }
+
+
+
+
+    ]
+  }
