@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
 import Quiz from './components/Quiz';
-import ShowTest from './components/ShowTest';
+import ShowQuiz from './components/ShowQuiz';
 
 function App() {
   return (
@@ -14,14 +14,8 @@ function App() {
 
           <Route exact path="/" component={Home} />
           <Route exact path="/quiz" component={Quiz} />
-          <Route exact path="/quiz/:domain" component={ShowTest} />
+          <Route exact path="/quiz/:domain" component={ShowQuiz} />
 
-          {/* 
-          <PublicRoute path="/login" component={Login} />
-          <PrivateRoute path="/event-add" component={EventAdd} />
-          <PrivateRoute path="/event-edit/:id" component={EventEdit} />
-          <PrivateRoute path="/events" component={EventList} />
-          <PrivateRoute path="/event-detail/:id" component={EventDetail} /> */}
         </Switch>
     </Router>
     </div>

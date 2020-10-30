@@ -2,8 +2,10 @@ import Axios from 'axios';
 import React, { Component } from 'react'
 import axios from 'axios'
 import ShowResults from './ShowResults';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-export default class ShowTest extends Component {
+
+export default class ShowQuiz extends Component {
 
 
     constructor(props) {
@@ -87,6 +89,15 @@ export default class ShowTest extends Component {
                 }
                 
                 <button onClick={() => {this.setState({done:true})}} className="btn btn-lg btn-success">Submit answers</button>
+                <br />
+                <br />
+                <Link
+              to="/quiz"
+              className="btn btn-danger btn-lg"
+              style={{ padding: 8 }}
+            >
+              <h4>Go back to all quizzes</h4>
+            </Link>
 
             </div>
         )
