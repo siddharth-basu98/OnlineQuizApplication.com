@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# About the application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Online test application is aiming to digitise a product which is an online quiz system capable of conducting a quiz online for the user. The application is segregated into three main modules: 
 
-## Available Scripts
+### Quiz module: 
+The user is first shown different options for the available quizzes to attempt. The quizzes are of different domains and each has a set number of questions. Upon clicking on any particular quiz, the user is displayed a question on that domain which he needs to answer.  
 
-In the project directory, you can run:
+### Result: 
+The application in addition to conducting the quiz, also gives a score to the user according to the answers received to the questions. Each question has only one single answer. The score computed is out of the total questions in that domain (currently 5 questions per domain). 
 
-### `npm start`
+### Review and Assessment: 
+On the main assessment page of the application there is a question wise analysis of the quiz. Each question is marked correct or wrong based on the answers received by the user. If the question is answered wrong, then the right answer is marked in green and the user's wrong answer in red.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Some key concepts used in the Application
 
-### `npm test`
+- React states and classful components
+- React Props and functional components
+- JSON server for API endpoints (mock backend development)
+- React component lifecycle methods
+- Bootstrap and CSS for styling
+- ES6 JavaScript features
+- React Router
+- Concurrently for automating the npm start command
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#
 
-### `npm run build`
+# How to run the app (automated via concurrenty module)
+### Step 1:  
+If using HTTPS, run the following command on the terminal to clone the Online Test App made with React and JSON server, https://github.com/siddharth-basu98/OnlineQuizApplication.com.git, otherwise if using SSH, git@github.com:siddharth-basu98/OnlineQuizApplication.com.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Step 2: (Activating APIs through JSON Server)
+Using any IDE of choice, open the cloned project in the workspace. Run the command “npm install” to install all the modules and dependencies of the application. Following which the Json server and React development server can both be started using the simple command “npm run dev”. A screenshot of package.json is shown below as to why this happens. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# How to run the app (without concurrenty module)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Step 1:  
+If using HTTPS, run the following command on the terminal to clone the Online Test App made with React and JSON server, https://github.com/siddharth-basu98/OnlineQuizApplication.com.git, otherwise if using SSH, git@github.com:siddharth-basu98/OnlineQuizApplication.com.git
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Step 2: (Activating APIs through JSON Server)
+Using any IDE of choice, open the cloned project in the workspace. Run the command “npm install” to install all the modules and dependencies of the application. After doing that run “cd backend_json_server”  and then type in the terminal  “npm json-server --watch db.json”. This starts the backend server which starts listening to port 3000 where the react app sends its request to. You can directly run “npm json-server --watch backend_json_server/db.json” directly. 
 
-## Learn More
+### Step 3: (Starting the React Server)
+On the root directory of the application, just run the command “npm install” and then“npm start”, it automatically starts the react development server on port 4000 which is written in the start script of the package.json file. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Step 4:
+Enjoy all the functionalities of the app from here on. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
