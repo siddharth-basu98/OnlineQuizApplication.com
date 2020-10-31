@@ -109,6 +109,61 @@
         "option4":"Control Systems Society",
         "answer" : "1",
         "your_answer": ""
+      },
+      {
+        "id": 11,
+        "domain":"japan",
+        "question": "What is visible from the Shinkansen window when traveling From Tokyo to Osaka?",
+        "option1":"Thunder Gate in Asakusa",
+        "option2":"Floating Torii Gate",
+        "option3":"Mt. Fuji",
+        "option4":"Himeji Castle",
+        "answer" : "3",
+        "your_answer": ""
+      },
+      {
+        "id": 12,
+        "domain":"japan",
+        "question": "What is “Nice to Meet You!” in Japanese?",
+        "option1":"Konnichiwa!",
+        "option2":"Hajimemashite!",
+        "option3":"Arigato!",
+        "option4":"Sayonara!",
+        "answer" : "2",
+        "your_answer": ""
+      },
+      {
+        "id": 13,
+        "domain":"japan",
+        "question": "What was Tokyo called during the Edo era?",
+        "option1":"Tokyo-san",
+        "option2":"Edo",
+        "option3":"Takeshi",
+        "option4":"Nishi-Tokyo",
+        "answer" : "2",
+        "your_answer": ""
+      },
+      {
+        "id": 14,
+        "domain":"japan",
+        "question": "What are the women pearl divers called in Japan?",
+        "option1":"Nando",
+        "option2":"Tama",
+        "option3":"Eto",
+        "option4":"Ama",
+        "answer" : "4",
+        "your_answer": ""
+      },
+      {
+        "id": 15,
+        "domain":"japan",
+        "question": "Who is the present Emperor of Japan?",
+        "option1":"Naruhito-san",
+        "option2":"Akihito-san",
+        "option3":"Hirohito-san",
+        "option4":"Kumamoto-san",
+        "answer" : "1",
+        "your_answer": ""
       }
 
 

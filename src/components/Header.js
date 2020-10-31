@@ -9,7 +9,7 @@ export default class Header extends Component {
     return (
 
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style={{marginBottom:40}}>
-  <a class="navbar-brand" href="#">Online Test Application</a>
+  <a class="navbar-brand" href="/">Online Test Application</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
